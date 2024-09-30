@@ -2,8 +2,10 @@ package page;
 
 import com.codeborne.selenide.SelenideElement;
 import lombok.Getter;
+import org.openqa.selenium.By;
 
 import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.$x;
 
 @Getter
 public class MainPage {
@@ -18,5 +20,6 @@ public class MainPage {
     private final SelenideElement administrationButton = $("#userPanel > div:nth-child(4) > div > a");
     private final SelenideElement helpButton = $("#userPanel > div:nth-child(5) > div > button > span > span > span");
     private final SelenideElement headerSearchButton = $("#SAKURA_HEADER_RIGHT > div > div > span > a > span > svg");
-
+    private final SelenideElement userPanelButton = $("#userPanel > div:nth-child(7) > div > button > span > span > svg > g");
+    private final SelenideElement logoutButton = $x("//a[contains(text(),'Logout')]");
 }
