@@ -6,7 +6,7 @@ Java 11
 
 Postman (in case of "On Demand" run)
 
-teamcity-server
+Docker desktop with installed image of teamcity server
 __________________
 
 docker stop teamcity-server

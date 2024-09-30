@@ -2,14 +2,12 @@ package page;
 
 import com.codeborne.selenide.SelenideElement;
 import lombok.Getter;
-import org.openqa.selenium.By;
 
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$x;
 
 @Getter
 public class MainPage {
-    //header
     private final SelenideElement projectsButton = $("#header-portal > div > header > div:nth-child(2) > a.ring-link-link.Links__link--eg.ring-link-active.RouterLink__link--VM.Link__link--ZK");
     private final SelenideElement createProjectHeaderButton = $("#header-portal > div > header > div:nth-child(2) > a.ring-link-link.LinkWithIcon__link--jt.Links__addProject--cL.Link__link--ZK > div > span");
     private final SelenideElement createProjectButton = $("#main-content-tag > div.MainPanel__content--lE > div > div > div > div.UIPlaceholder__infoContainer--xa > div > a.ring-button-button.FavoriteProjectsPage__button--wS.ring-button-heightM.ring-button-primary > span");

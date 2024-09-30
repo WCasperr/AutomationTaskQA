@@ -22,7 +22,6 @@ public class ProjectManagementTest extends BaseUiTest {
 
     @Test
     public void createNewProjectTest() {
-        // Логинимся
         projectName = "TestProject_" + UUID.randomUUID().toString().replace("-", "_");
         projectId = "TestProjectId_" + UUID.randomUUID().toString().replace("-", "_");
 
